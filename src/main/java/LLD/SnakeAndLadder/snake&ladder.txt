@@ -1,0 +1,28 @@
+- there will a board and it will have 100 positions
+- it will have snake, ladder and dice
+- players
+
+- Board
+    List<List<Position>>
+    List<Snake>
+    List<Ladder>
+
+- Position
+    id
+    column
+    row
+
+- Snake
+    -startingPosition
+    -endingPosition
+
+- Ladder
+     -startingPosition
+     -endingPosition
+
+- Player
+     id
+     name
+     currentPosition
+
+

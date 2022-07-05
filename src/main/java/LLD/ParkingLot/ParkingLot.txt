@@ -1,0 +1,46 @@
+ - Multilevel parking
+ - Multiple category of parking space
+ - Multiple entry and exit
+ - Should not allocate more vehicle the allocated space
+ - Charge should be hourly basis
+ - Display available parking in entry itself
+
+
+ - ParkingLot
+    - List<ParkingFloor>
+    - List<Terminal>
+
+ - ParkingFloor
+    - floorId
+    - List<List<ParkingSpace>>
+
+ - ParkingSpace
+    - id
+    - category
+
+ - Category
+    - Large
+    - Compact
+    - Bike
+
+ - Terminal
+    - id
+    - entry
+    - exit
+
+ - Entry
+    -id
+    -DisplayBoard
+    -TicketVendingMachine
+
+ - Exit
+    -id
+    -TicketReadingMachine
+
+ - Ticket
+   - id
+   - ParkingSpace
+   - VehicleNumber
+   - StartTime
+   - EndTime
+   - cost
